@@ -1,0 +1,66 @@
+@font-face {
+    font-family: ArchivoBlack;
+    src: url(./assets/ArchivoBlack-Regular.ttf);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 22px;
+}
+
+.contact, .github {
+    color: white;
+    font-family: Arial;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: ArchivoBlack;
+}
+
+.Seperator {
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+    width: 275px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+    .contact, .github {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+    .Seperator {
+        font-size: 26px;
+    }
+
+    .information {
+        width: 200px;
+    }
+}
